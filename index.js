@@ -120,7 +120,7 @@ const demo = {
 		this.ui.style.position = "absolute";
 		this.ui.style.right = "0";
 		this.ui.style.width = "200px";
-		this.ui.value = 40.0;
+		this.ui.value = 200.0;
 		this.ui.step = 10.0;
 		
 		document.body.appendChild( this.stats.dom );
@@ -149,21 +149,17 @@ const demo = {
 						createFBO(this.gl, [this.webcam.video.videoWidth, this.webcam.video.videoHeight]) 
 					];
 				}
-				this.render();
 				this.state[this.current].color[0].setPixels(this.webcam.video);
+				for (let i = 0, len = this.ui.value; i < len; i++) {
+					this.tick();
+				}
+				this.render();
 				if(!this.webcamStarted){
 					window.addEventListener("resize", this.resize.bind(this)); 
 					window.addEventListener("keydown", this.keydown.bind(this));
-					setInterval(this.tick.bind(this), 0);
-					setInterval(this.tick.bind(this), 0);
-					setInterval(this.tick.bind(this), 0);
-					setInterval(this.tick.bind(this), 0);
-					setInterval(this.tick.bind(this), 0);
-					setInterval(this.tick.bind(this), 0);
-					setInterval(this.tick.bind(this), 0);
 				}
 				clearInterval(bufferInit);
-				bufferInit = setTimeout(bufferReset, this.ui.value);
+				bufferInit = setTimeout(bufferReset, 40);
 				this.webcamStarted = true;
 			}
 		}
