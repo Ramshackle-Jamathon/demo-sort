@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "repository": "github.com:Ramshackle-Jamathon/demo-sort.git",
   "author": "Joseph Van Drunen <josephvandrunen@gmail.com>",
-  "keywords": [
-    "webgl"
-  ],
+  "keywords": ["webgl"],
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -17,7 +15,7 @@
     "a-big-triangle": "^1.0.3",
     "gl-fbo": "^2.0.5",
     "gl-shader": "^4.2.1",
-    "keep-rollin": "^0.0.3",
+    "keep-rollin": "^0.0.4",
     "stats.js": "^0.17.0"
   },
   "devDependencies": {
@@ -26,8 +24,6 @@
     "babel-loader": "6.3.0",
     "babel-plugin-transform-class-properties": "^6.6.0",
     "babel-preset-es2015": "6.22.0",
-    "eslint": "3.15.0",
-    "eslint-loader": "1.6.2",
     "html-webpack-plugin": "2.27.0",
     "shader-loader": "^1.3.0",
     "webpack": "2.2.0-rc.4",
