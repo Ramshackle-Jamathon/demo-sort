@@ -15,7 +15,7 @@
     "a-big-triangle": "^1.0.3",
     "gl-fbo": "^2.0.5",
     "gl-shader": "^4.2.1",
-    "keep-rollin": "^0.0.4",
+    "keep-rollin": "^0.0.5",
     "stats.js": "^0.17.0"
   },
   "devDependencies": {
